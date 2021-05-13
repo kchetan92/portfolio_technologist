@@ -12,6 +12,10 @@ const Logo = styled.div`
   }
 `;
 
+const Skills = styled.div`
+  margin-top: 20px;
+`;
+
 const FloatContent = styled.div`
   position: relative;
   z-index: 2;
@@ -25,6 +29,9 @@ const Home = () => (
         <img src={LogoImg} />
         <p>UX Designer, Engineer</p>
       </Logo>
+      <Skills>
+        <p className="title">SKILLS</p>
+      </Skills>
     </FloatContent>
   </div>
 );

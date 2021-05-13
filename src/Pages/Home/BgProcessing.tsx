@@ -3,10 +3,9 @@ import styled from "styled-components";
 
 import Sketch from "react-p5";
 import p5Types from "p5";
-import { sign } from "crypto";
 
 const margin = 50;
-const separationAmplitude = 10;
+const separationAmplitude = 8;
 const distanceBetweenPoints = 40;
 
 const Container = styled.div`
@@ -65,7 +64,7 @@ const Background = () => {
           const { height, width } = container.getBoundingClientRect();
 
           p5.createCanvas(width, height).parent(parentRef);
-          p5.frameRate(60);
+          p5.frameRate(30);
           p5.noStroke();
 
           const reducedHeight = height - margin * 2;
